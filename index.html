@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabajo Practico</title>
+    <link rel="stylesheet" href="page.css" type="text/css" />  
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="encabezado">
+          <center>
+            <h1>Programacion ll</h1>
+            <h3>Vendedores</h3>
+          </center>
+        </div>
+      </section>
+      <div class="pagina">
+        <section>
+          <div class="menu">
+            <center>
+              <input
+                type="button"
+                value="Agregar"
+                onclick="Agregar()"
+                style="
+                  background-color: #2b9ead;
+                  color: white;
+                  padding: 13px 18px;
+                  text-align: center;
+                  text-decoration: wavy;
+                  display: inline-block;
+                  font-size: 12px;
+                  border-radius: 12px;
+                  width: 80%;
+                  margin-top: 25%;
+                "
+              />
+
+              <input
+                type="button"
+                value="Estadisticas"
+                onclick="Estadisticas()"
+                style="
+                  background-color: #2b9ead;
+                  color: white;
+                  padding: 13px 18px;
+                  text-align: center;
+                  text-decoration: wavy;
+                  display: inline-block;
+                  font-size: 12px;
+                  border-radius: 12px;
+                  width: 80%;
+                  margin-top: 25%;
+                "
+              />
+
+              <input
+                type="button"
+                value="Eliminar Datos"
+                onclick="Eliminar()"
+                style="
+                  background-color: #e40f21;
+                  color: white;
+                  padding: 13px 18px;
+                  text-align: center;
+                  text-decoration: wavy;
+                  display: inline-block;
+                  font-size: 12px;
+                  border-radius: 12px;
+                  width: 80%;
+                  margin-top: 25%;
+                "
+              />
+            </center>
+          </div>
+        </section>
+        <section class="contenido">
+          <form action="">
+            <div>
+              <input
+                type="text"
+                id="txtNroVendedor"
+                placeholder="Nro de Vendedor"
+              />
+              <input
+                type="number"
+                id="txtVenta"
+                placeholder="Ventas en Pesos"
+              />
+              <input
+                type="text"
+                id="txtCantdeProductosVendidos"
+                placeholder="Cant de Productos Vendidos"
+              />
+              <input type="text" id="txtFecha" placeholder="Fecha" />
+            </div>
+            <br />
+            <div>
+              <input type="text" id="txtCuil" placeholder="Cuil" />
+              <input type="text" id="txtApellido" placeholder="Apellido" />
+              <input type="text" id="txtNombre" placeholder="Nombre" />
+              <input
+                type="text"
+                id="txtFechadeNacimiento"
+                placeholder="Fecha de Nacimiento"
+              />
+            </div>
+          </form>
+          <br /><br />
+          <h2>Listado</h2>
+          <center>
+            <table style="width: 95%">
+              <thead>
+                <th>N° Vendedor</th>
+                <th>Ventas</th>
+                <th>Cant. Productos Vendidos</th>
+                <th>Fecha</th>
+                <th>Cuil</th>
+                <th>Apellido</th>
+                <th>Nombre</th>
+                <th>Fecha Nacimiento</th>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </center>
+          <br />
+          <h2>Estadisticas</h2>
+          <form action="">
+            <div>
+              <p>
+                <label for="">Venta Total:</label>
+                <label for="" id="lblVentaTotal">0</label>
+              </p>
+              <p>
+                <label for="">Mayor Promedio de Ventas:</label>
+                <label for="" id="lblMayorPromedioVentas">0</label>
+              </p>
+            </div>
+            <div>
+              <p>
+                <label for="">Menor Promedio de Ventas:</label>
+                <label for="" id="lblMenorPromedioVentas">0</label>
+              </p>
+            </div>
+            <div>
+              <p>
+                <label for="">Vendedor con Mas Ventas:</label>
+                <label for="" id="lblVendedorMasVentas">0</label>
+              </p>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <h4>Vasquez Melina Denise- Carrera Analista en Sistemas</h4>
+    </footer>
+  </body>
+  <script src="./js/index.js" language="javascript" type="text/javascript"></script>
+</html>
